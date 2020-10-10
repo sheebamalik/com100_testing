@@ -7,8 +7,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 import pageObject.HomePage;
 import pageObject.LoginPage;
+
+import java.util.concurrent.TimeUnit;
 
 public class Login extends BaseClass {
 	
@@ -40,13 +43,8 @@ public class Login extends BaseClass {
 	
 	@Then ("^User is able to login to his account$")
 	public void User_is_able_to_login_to_his_account() {
-		HomePage homePage = new HomePage();
-		try {
-			wait.until(ExpectedConditions.visibilityOf(homePage.homepagetitle));
-		}
-		catch (Exception e){
-			System.out.println("Invalid Credentials");
-		}
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		Assert.assertEquals(driver.getTitle(),"Com100 - Home Page", "Login Failed");
 	}
 	
 }

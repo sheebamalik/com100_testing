@@ -18,6 +18,7 @@ public class BaseClass {
 	public static Properties prop = new Properties();
 	public static WebDriver driver;
 	public static WebDriverWait wait;
+	public static int PAGE_LOAD_TIMEOUT = 20;
 	
 	public void readConfigFile(){
 	

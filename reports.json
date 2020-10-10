@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-10T11:23:14.861Z",
+        "start_timestamp": "2020-10-10T11:49:44.956Z",
         "before": [
           {
             "result": {
-              "duration": 7251253000,
+              "duration": 6615872000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 2552172000,
+              "duration": 822985000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 163522000,
+              "duration": 149177000,
               "status": "passed"
             },
             "line": 4,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 159616000,
+              "duration": 179026000,
               "status": "passed"
             },
             "line": 5,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 174110000,
+              "duration": 176431000,
               "status": "passed"
             },
             "line": 6,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 163009000,
+              "duration": 275620000,
               "status": "passed"
             },
             "line": 7,
@@ -83,8 +83,9 @@
           },
           {
             "result": {
-              "duration": 4171000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: Login Failed expected [Com100 - Home Page] but found [Comm100 - User Sign in]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat org.testng.Assert.assertEquals(Assert.java:453)\n\tat stepDefinitions.Login.User_is_able_to_login_to_his_account(Login.java:47)\n\tat ✽.User is able to login to his account(file:///Users/sheebamalik/Documents/wdmember_automation/com100/src/main/java/Features/login.feature:8)\n",
+              "duration": 1536282000,
+              "status": "failed"
             },
             "line": 8,
             "name": "User is able to login to his account",
