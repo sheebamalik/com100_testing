@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-10T11:23:14.861Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7251253000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify user is able to login to the portal",
+        "description": "",
+        "id": "com100-login-page;verify-user-is-able-to-login-to-the-portal",
+        "after": [
+          {
+            "result": {
+              "duration": 2552172000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 163522000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is in login page",
+            "match": {
+              "location": "stepDefinitions.Login.User_is_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 159616000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters Username",
+            "match": {
+              "location": "stepDefinitions.Login.User_enters_Username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174110000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Password",
+            "match": {
+              "location": "stepDefinitions.Login.User_enters_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163009000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "stepDefinitions.Login.User_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4171000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is able to login to his account",
+            "match": {
+              "location": "stepDefinitions.Login.User_is_able_to_login_to_his_account()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "com100 Login Page",
+    "description": "",
+    "id": "com100-login-page",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/Features/login.feature",
+    "tags": []
+  }
+]
